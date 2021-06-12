@@ -10,7 +10,7 @@
 
     <title>Лексичний мінімум медіазнавця</title>
 
-    <link rel="stylesheet" href="/css/bvi.min.css" type="text/css">
+    <link rel="stylesheet" href="css/bvi.min.css" type="text/css">
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -18,8 +18,8 @@
 
     <!-- Custom Fonts -->
     <link href=//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900' rel='stylesheet' type='text/css'>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
@@ -139,7 +139,8 @@
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <a href="#">М</a>
 
-                    <!-- </span>
+                  </span> 
+                   <!-- 
                 <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <a href="#">Н</a>
@@ -213,7 +214,7 @@
                 </span> -->
                     <!-- <input type="text"  tabindex="0" class="form-control  " placeholder="Шукати слово" id="search">  -->
 
-            </div>
+            </div></div>
             <!-- <div class="line"></div> -->
 
             <div class="col-md-3 paddingL">
@@ -352,41 +353,52 @@
 
 
 
-            <div class="col-md-6">
+            <div class="col-md-6 main">
                 <section class="caption_n" tabindex="0">
                     <h3 id="termin" class="heading">Медіаарт</h3>
-                    <span class="fa-stack fa-lg ">
+                    <span class="fa-stack fa-lg  ">
                         <a tabindex="0" title="Відеоілюстрація"
                             href="https://www.youtube.com/watch?v=DV4Ya6XOwYs&feature=youtu.be&fbclid=%0BIwAR1qDXTaXt5ezpXkfiQxmB8T5Q7Qd6TkWXMjHAtMmVvzEggVQ-A00DMPGXc">
                             <i class="fa
-                    fa-youtube fa-stack-1x fa-inverse pictogram"></i> </a>
+                    fa-youtube fa-stack-1x fa-inverse pictogram noactive"></i> </a>
                     </span>
 
-                    <span class="fa-stack fa-lg ">
+                    <span class="fa-stack fa-lg  ">
                         <a tabindex="0" title="Анімація"
                             href="https://www.youtube.com/watch?v=DV4Ya6XOwYs&feature=youtu.be&fbclid=%0BIwAR1qDXTaXt5ezpXkfiQxmB8T5Q7Qd6TkWXMjHAtMmVvzEggVQ-A00DMPGXc">
                             <i class="fa
-                            fa-film fa-stack-1x fa-inverse pictogram"></i> </a>
+                            fa-film fa-stack-1x fa-inverse pictogram noactive"></i> </a>
                     </span>
 
                     <span class="fa-stack fa-lg ">
                         <a tabindex="0" title="Фотоілюстрація" href="#">
                             <i class="fa
-                            fa-picture-o fa-stack-1x fa-inverse pictogram"></i> </a>
+                            fa-picture-o fa-stack-1x fa-inverse pictogram noactive"></i> </a>
                     </span>
+                    <span class="fa-stack fa-lg ">
+                        <a tabindex="0" title="Презентація" href="#">
+                            <i class="fa
+                            fa-television fa-stack-1x fa-inverse pictogram noactive"></i> </a>
+                    </span>
+                    <span class="fa-stack fa-lg ">
+                        <a tabindex="0" title="Стаття" href="#">
+                            <i class="fa
+                             fa-file-word-o fa-stack-1x fa-inverse pictogram noactive"></i> </a>
+                    </span>
+
 
                     <span class="fa-stack fa-lg ">
                         <a tabindex="0" title="Подкаст"
                             href="https://www.youtube.com/watch?v=DV4Ya6XOwYs&feature=youtu.be&fbclid=%0BIwAR1qDXTaXt5ezpXkfiQxmB8T5Q7Qd6TkWXMjHAtMmVvzEggVQ-A00DMPGXc">
                             <i class="fa
-                        fa-rss-square fa-stack-1x fa-inverse pictogram"></i> </a>
+                        fa-rss-square fa-stack-1x fa-inverse pictogram noactive"></i> </a>
                     </span>
 
                     <span class="fa-stack fa-lg ">
                         <a tabindex="0" title="Екранний диктор"
                             href="https://www.youtube.com/watch?v=DV4Ya6XOwYs&feature=youtu.be&fbclid=%0BIwAR1qDXTaXt5ezpXkfiQxmB8T5Q7Qd6TkWXMjHAtMmVvzEggVQ-A00DMPGXc">
                             <i class="fa
-                            fa-commenting fa-stack-1x fa-inverse pictogram"></i> </a>
+                            fa-commenting fa-stack-1x fa-inverse pictogram noactive"></i> </a>
                     </span>
 
 
@@ -444,7 +456,7 @@
             </div>
             <div class="col-md-3 paddingT">
 
-                <div class="bg-light border-right" id="sidebar-wrapper">
+                <div class="bg-light border-right" >
 
                     <div class="list-group list-group-flush listitems">
                         <a href="#" class="list-group-item list-group-item-action"> Про проєкт</a>
@@ -457,17 +469,48 @@
                     </div>
 
                 </div>
-                <a href="#" class="list-group-item list-group-item-action addTerm">Додати термін</a>
+                <a href="javascript:void(0);" onclick="openForm()" class="list-group-item list-group-item-action addTerm">Додати термін</a>
 
 
 
             </div>
-
+           
 
         </div>
-
-    </div>
+       
     <hr>
+
+    <div class="form-popup" id="myForm">
+        <form action="../action_page.php" class="form-container">
+          <h2>Додати термін</h2>
+      
+          <label for="termin"><b>Термін</b></label>
+          <input type="text" placeholder="Термін" name="termin" required>
+      
+          <label for="etym"><b>Етимологія терміна</b></label>
+          <input type="text" placeholder="Етимологія" name="etym" >
+
+          <label for="equivalent"><b>Еквівалент іншою мовою </b></label>
+          <input type="text" placeholder="Еквівалент" name="equivalent" >
+
+          <label for="synonym"><b>Синонім або відсилання до іншого терміна</b></label>
+          <input type="text" placeholder="Синонім" name="synonym" >
+
+          <label for="vocabulary"><b>Словникове значення</b></label>
+          <input type="text" placeholder="Словникове значення" name="vocabulary" >
+
+          <label for="contextual"><b>Контекстне значення</b></label>
+          <input type="text" placeholder="Контекстне значення " name="contextual" >
+
+          <label for="source"><b>Джерело</b></label>
+          <input type="text" placeholder="Джерело" name="source" >
+      
+          <button type="submit" class="btn">Додати</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Закрить</button>
+        </form>
+      </div>
+    
+
     <!-- Footer -->
     <footer id="footer">
         <div class="container">
@@ -524,7 +567,18 @@
             </div>
         </div>
     </footer>
-    <script src="./search.js"></script>
+   
+    <script>
+        function openForm() {
+          document.getElementById("myForm").style.display = "block";
+        }
+        
+        function closeForm() {
+          document.getElementById("myForm").style.display = "none";
+        }
+        </script>
+
+    <script src="js/search.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-database.js"></script>
 
@@ -533,136 +587,13 @@
          https://firebase.google.com/docs/web/setup#available-libraries -->
     <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-analytics.js"></script>
 
-    <script>
-        // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-        var firebaseConfig = {
-            apiKey: "AIzaSyBsMXq4l2KQDKHEcB356K5O0mY24WC3T90",
-            authDomain: "lexicalminimum.firebaseapp.com",
-            databaseURL: "https://lexicalminimum-default-rtdb.europe-west1.firebasedatabase.app",
-            projectId: "lexicalminimum",
-            storageBucket: "lexicalminimum.appspot.com",
-            messagingSenderId: "494411586982",
-            appId: "1:494411586982:web:5cd721fd16cff5b7c3c367",
-            measurementId: "G-T3JT704E9D"
-        };
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-        firebase.analytics();
-
-        let leftlist = document.getElementById('leftlist');
-        let otherDescription = document.getElementById('otherDescription');
-        let termins = [];
-
-
-        function getData(event, type = 'LexicalMin') {
-            var dbRef = firebase.database().ref(`1YQG7H2FTltWuQoEl_wXnhCHF0LCShGUrhpbtEtgF-qc/${type}`);
-            dbRef.on('value', snap => render(snap.val()));
-        }
-
-        function render(data) {
-            // console.log('data', data);
-            termins = data;
-            leftlist.innerHTML = "";
-            termins.forEach(item => renderItem(item));
-        }
-
-        function renderItem(item) {
-            if (item.termin !== '') {
-                leftlist.innerHTML += `
-            <a href="javascript:void(0);" class="searchItem list-group-item list-group-item-action" onclick="renderTermin(${item.id})">${item.termin}</a>
-          `
-            }
-        }
-
-        function renderTermin(id) {
-            otherDescription.innerHTML = '';
-            //let termin = termins.find(termin => termin.id === id);
-            let termin = termins[id];
-
-           for (var key in termin) {
-        const p = document.getElementById(key);
-        if (p) {
-
-            let description = termin[key];
-           description = addAbbr(description);
-
-            p.innerHTML = description;
-            if (description) {
-                p.closest('div.block')?.classList.remove('hide');
-            } else {
-                p.closest('div.block')?.classList.add('hide');
-            }
-        }
-    }
-    checkOtherDescription(id);
-}
-
-
-
-function checkOtherDescription(id) {
-    while (termins[++id].termin == '') {
-        let termin = termins[id];
-     
-      otherDescription.innerHTML = termin.etymology != '' ? `<div class="block">
-                    <h2 class="translateheader" tabindex="0">Етимологія терміна</h2>
-                    <hr class="hrline">
-                    <p>${addAbbr(termin.etymology)}</p>
-                </div>`: '';
-
-
-        otherDescription.innerHTML += termin.equivalent != '' ? `<div class="block">
-                <h2 class="translateheader" tabindex="0">Еквівалент іншою мовою</h2>
-                <hr class="hrline">
-                    <p id="equivalent">${addAbbr(termin.equivalent)}</p>
-                </div>`: '';
-
-        otherDescription.innerHTML += termin.synonym != '' ? `<div class="block">
-                    <h2 class="translateheader" tabindex="0">Синонім або відсилання до іншого терміна</h2>
-                    <hr class="hrline">
-                        <p id="synonym">${addAbbr(termin.synonym)}</p>
-                </div>`: '';
-
-        otherDescription.innerHTML += termin.vocabulary != '' ? `<div class="block">
-                        <h2 class="translateheader" tabindex="0">Словникове значення </h2>
-                        <hr class="hrline">
-                            <p id="vocabulary">${addAbbr(termin.vocabulary)}</p>
-                </div>`: '';
-
-        otherDescription.innerHTML += termin.contextual != '' ? `<div class="block">
-                            <h2 class="translateheader" tabindex="0">Контекстне значення </h2>
-                            <hr class="hrline">
-                                <p id="contextual">${addAbbr(termin.contextual)}</p>
-                </div>`: '';
-
-        otherDescription.innerHTML += termin.source != '' ? `<div class="block ">
-                                <h2 class="translateheader" tabindex="0">Джерело </h2>
-                                <hr class="hrline">
-                                    <p id="source" class="source lightblue ">${addAbbr(termin.source)}</p>
-                </div>`: '';
-    }
-}
-function addAbbr(description) {
-    let abbrev = ['англ.', 'рос.', 'див. також', 'лат.', "див."];
- 
-           for (var k = 0; k < abbrev.length; k++) {
-            description =  description.replace(abbrev[k], `<a href="#" class="lightblue">${abbrev[k]}</a>`);      
-    }
-return description;
-}
-
-
-
-        document.addEventListener('DOMContentLoaded', () => getData());
-
-
-    </script>
+    <script src="js/displayTerms.js"></script>
 
     <!-- версія для людей з вадами зору -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script src="/js/js.cookie.js"></script>
-    <script src="/js/bvi-init.js"></script>
-    <script src="/js/bvi.min.js"></script>
+    <script src="js/js.cookie.js"></script>
+    <script src="js/bvi-init.js"></script>
+    <script src="js/bvi.min.js"></script>
 </body>
 
 </html>
